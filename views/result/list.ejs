@@ -274,6 +274,7 @@ including header content which is common for all pages
 		<thead>
 			<tr>
 				<th>ID</th>
+				<th>Event</th>
 				<th>Chest No</th>
 				<th>Name</th>
 				<th>Year</th>
@@ -288,6 +289,7 @@ including header content which is common for all pages
 		<tfoot>
 			<tr>
 				<th>ID</th>
+				<th>Event</th>
 				<th>Chest No</th>
 				<th>Name</th>
 				<th>Year</th>
@@ -306,6 +308,9 @@ including header content which is common for all pages
 			<tr>
 				<td>
 					<%= ++i %>
+				</td>
+				<td>
+					<%= event_name %>
 				</td>
 				<td>
 					<%= student.chest_no  %>
@@ -339,8 +344,8 @@ including header content which is common for all pages
 									select: true,
 									dom: 'Bfrtip',
 									buttons: [
-									// 'csv', 'pdf', 'print'
-									'print'
+									'csv', 'pdf', 'print'
+									// 'print'
 									],
 								});
 								$('#selectEvent option.Female').hide();
